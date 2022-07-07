@@ -1,0 +1,107 @@
+<nav class="navigation header__navigation">
+  <button
+    class="navigation__menu-button"
+    [class.is-open]="isVisible"
+    (click)="changeIsVisible()"
+  >
+    Menu
+  </button>
+  <div
+    class="navigation__content"
+    [class.is-visible]="isVisible"
+  >
+    <ul class="navigation__list">
+    <li class="navigation__list-item">
+      <a
+        href="/"
+        class="navigation__link"
+        [class.navigation__link--is-active]="activeLink === 'home'"
+        (click)="changeIsVisible()"
+      >
+        Home
+      </a>
+    </li>
+    <li class="navigation__list-item">
+      <a
+        href="/"
+        class="navigation__link"
+        [class.navigation__link--is-active]="activeLink === 'aboutUs'"
+        (click)="changeIsVisible()"
+      >
+        About Us
+      </a>
+    </li>
+    <li class="navigation__list-item">
+      <a
+        href="/"
+        class="navigation__link"
+        [class.navigation__link--is-active]="activeLink === 'whatWeDo'"
+        (click)="changeIsVisible()"
+      >
+        What We Do
+      </a>
+    </li>
+    <li class="navigation__list-item navigation__list-item--only-small-screen">
+      <a
+        href="/"
+        class="navigation__link"
+        (click)="changeIsVisible()"
+      >
+        Our history
+      </a>
+    </li>
+    <li class="navigation__list-item">
+      <a
+        href="#contact-us"
+        class="navigation__link"
+        [class.navigation__link--is-active]="activeLink === 'contactUs'"
+        (click)="changeIsVisible()"
+      >
+        Contact Us
+      </a>
+    </li>
+  </ul>
+  <div class="navigation__services">
+    <h3 class="navigation__services-title">Services</h3>
+    <ul class="navigation__list">
+      <li class="navigation__list-item">
+        <a
+          href="/"
+          class="navigation__link"
+          (click)="changeIsVisible()"
+        >
+          Training and Implementation
+        </a>
+      </li>
+      <li class="navigation__list-item">
+        <a
+          href="/"
+          class="navigation__link"
+          (click)="changeIsVisible()"
+        >
+          Cyber Consultants
+        </a>
+      </li>
+      <li class="navigation__list-item">
+        <a
+          href="/"
+          class="navigation__link"
+          (click)="changeIsVisible()"
+        >
+          Consultancy and brand protection
+        </a>
+      </li>
+      <li class="navigation__list-item">
+        <a
+          href="/"
+          class="navigation__link"
+          (click)="changeIsVisible()"
+        >
+          Software
+        </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+
+</nav>

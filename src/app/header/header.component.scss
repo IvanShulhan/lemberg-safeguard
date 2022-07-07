@@ -1,0 +1,30 @@
+.header {
+  width: 100vw;
+  padding: 48px 0;
+  background-color: #ffbc00;
+
+  @media (max-width: 768px) {
+    padding: 40px 0 60px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 0;
+    width: 192.5px;
+    height: 41.5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/icons/Home.svg);
+
+    @media (max-width: 768px) {
+      width: 162px;
+      height: 35px;
+    }
+
+  }
+}
